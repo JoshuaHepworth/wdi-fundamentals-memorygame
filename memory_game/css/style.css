@@ -27,7 +27,7 @@ a {
 }
 
 main {
-	width: 850px;
+	width: 850px auto;
 	margin: 35px auto;
 }
 
