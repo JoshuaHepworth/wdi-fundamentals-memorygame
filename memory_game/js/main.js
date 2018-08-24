@@ -1,8 +1,7 @@
 var myFunction = function() {
-	document.getElementById('myForm').reset();
+    location.reload();
 }
-
-
+//objects of the card game
 var cards = [
 {
 rank: "queen",
@@ -50,14 +49,15 @@ console.log(cardsInPlay);
 
 //game-board front/back images 
 var createBoard = function() {
-	var cardTable = document.getElementById('game-board');
+	var cardBoard = document.getElementById('game-board');
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', 'images/back.png');
 		cardElement.setAttribute('data-id', i);
 		cardElement.addEventListener('click', flipCard);
-		cardTable.appendChild(cardElement);
+		cardBoard.appendChild(cardElement);
 		
 	}
 };
+
 createBoard();
